@@ -1,2 +1,5 @@
 # Personal Brand Website
-## Made with React & sass
+This project was bootstrapped with Create React App.
+
+### Technologies used
+React & SASS.

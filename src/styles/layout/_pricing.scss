@@ -1,0 +1,37 @@
+.pricing {
+  padding: 4rem 1rem;
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__card {
+    margin: 2rem 0;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-accent;
+    background-blend-mode: overlay;
+    color: white;
+    text-transform: uppercase;
+    border: 0.5rem solid $color-primary;
+
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+
+    }
+
+    &__price {
+      font-size: 2.5rem;
+    }
+  }
+}

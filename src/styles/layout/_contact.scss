@@ -1,0 +1,43 @@
+.contact {
+  padding: 4rem 1rem;
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+    background-color: $color-primary;
+    font-weight: bold;
+
+    label {
+      display: block;
+      padding: 0.2rem 0;
+    }
+
+    input {
+      width: 100%;
+      border: 2px solid $color-accent;
+      outline: none;
+
+      &:focus {
+        border: 2px solid $color-hover;
+      }
+    }
+
+    textarea {
+      resize: none;
+      border: 2px solid $color-accent;
+      width: 100%;
+      outline: none;
+
+      &:focus {
+        border: 2px solid $color-hover;
+      }
+    }
+  }
+}

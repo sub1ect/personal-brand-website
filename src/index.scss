@@ -1,19 +1,15 @@
-// base
-@import "./styles/base/normalize";
-@import "./styles/base/typography";
-
-// components
-@import "./styles/components/buttons";
-
-// layout
-// @import "./styles/layout/..."
-
-// pages
-// @import "./styles/pages/..."
-
 // utilities
 @import "./styles/utilities/variables";
 @import "./styles/utilities/mixins";
 
-// vendors
-// @import "./styles/vendors/..."
+// base
+@import "./styles/base/normalize";
+@import "./styles/base/typography";
+
+// layout
+@import "./styles/layout/header";
+@import "./styles/layout/hero";
+@import "./styles/layout/about";
+@import "./styles/layout/pricing";
+@import "./styles/layout/contact";
+@import "./styles/layout/footer";

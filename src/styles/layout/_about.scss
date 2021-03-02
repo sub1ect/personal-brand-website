@@ -1,0 +1,21 @@
+.about {
+  padding: 4rem 1rem;
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__text {
+    color: $color-accent;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  &__img {
+    border-radius: 50%;
+    border: 0.5rem solid $color-primary;
+  }
+}

@@ -1,0 +1,21 @@
+.footer {
+  padding: 0.5rem;
+  background-color: $color-dark;
+  color: $color-primary;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__socials {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+
+    &__icon {
+      color: $color-primary;
+
+      &:hover, &:active {
+        color: $color-hover;
+      }
+    }
+  }
+}

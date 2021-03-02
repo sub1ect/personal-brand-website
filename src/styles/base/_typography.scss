@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family:'Courier New', Courier, monospace;
+  font-family: $font-primary;
   font-size: 1rem;
+  background-color: $color-light;
 }
 
 ul {
@@ -22,4 +23,17 @@ a {
 img {
   width: 100%;
   display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0.8rem;
+}
+
+.breakline {
+  height: 0.5rem;
+  width: 40%;
+  background-color: $color-accent;
+  margin: 0 auto;
 }

@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
 
+  @include desktop {
+    background: url("../../images/6.png") no-repeat center top/cover;
+  }
+
   &__title {
     font-family: $font-logo;
     margin: 0;
@@ -14,18 +18,31 @@
     text-align: center;
     color: $color-primary;
     padding-bottom: 3rem;
+
+    @include desktop {
+      font-size: 3rem;
+    }
   }
 
   &__cta {
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     background-color: $color-primary;
-    border-radius: 0.5rem;
-    color: $color-dark;
+    border-radius: 5px;
+    color: $color-accent;
     font-weight: bold;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
 
     &:hover, &:active {
       background-color: $color-hover;
+      color: $color-dark;
+
+      @include desktop {
+        transition: 0.5s;
+      }
     }
   }
 }

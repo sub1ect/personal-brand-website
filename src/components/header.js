@@ -41,12 +41,12 @@ const Hamburger = ({hamburgerButton, hamburgerOpen}) => {
 
 const Navigation = ({hamburgerOpen}) => {
   return (
-    <nav className="header__nav" style={hamburgerOpen ? {display: "none"} : {display: "flex"}}>
+    <nav className={hamburgerOpen ? "header__nav closed" : "header__nav"}>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="pricing">Pricing</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </nav>
   )

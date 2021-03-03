@@ -1,21 +1,54 @@
 .about {
   padding: 4rem 1rem;
+  position: relative;
 
   &__title {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+
+    @include desktop {
+      padding-bottom: 2rem;
+    }
   }
 
   &__text {
     color: $color-accent;
     padding: 2rem 0;
     text-align: center;
+
+    @include desktop {
+      text-align: left;
+      max-width: 75%;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__text.text--desktop {
+    display: none;
+    color: $color-accent;
+    padding: 2rem 0;
+    text-align: center;
+
+    @include desktop {
+      display: block;
+      text-align: left;
+      max-width: 75%;
+      padding-bottom: 1rem;
+    }
   }
 
   &__img {
     border-radius: 50%;
     border: 0.5rem solid $color-primary;
+
+    @include desktop {
+      position: absolute;
+      width: 35%;
+      top: 15%;
+      right: -12%;
+      border-radius: 30px;
+    }
   }
 }

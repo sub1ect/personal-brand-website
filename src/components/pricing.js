@@ -6,7 +6,7 @@ import online from "../images/online.jpg";
 
 const Pricing = () => {
   return (
-    <section className="pricing">
+    <section className="pricing container">
       <h2 className="pricing__title">Pricing</h2>
       <Card 
         background={training} 

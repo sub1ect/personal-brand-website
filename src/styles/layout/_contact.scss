@@ -14,6 +14,10 @@
     background-color: $color-primary;
     font-weight: bold;
 
+    @include desktop {
+      padding: 2rem 3rem;
+    }
+
     label {
       display: block;
       padding: 0.5rem 0 0.2rem;

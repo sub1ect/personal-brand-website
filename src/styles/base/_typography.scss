@@ -36,4 +36,9 @@ img {
   width: 40%;
   background-color: $color-accent;
   margin: 0 auto;
+
+  @include desktop {
+    width: 20%;
+    margin: 3rem auto;
+  }
 }

@@ -17,7 +17,7 @@ const Contact = () => {
 
         <label for="message">Message</label>
         <div>
-          <textarea name="message" rows="5" cols="33" />
+          <textarea name="message" />
         </div>
       </form>
     </section>

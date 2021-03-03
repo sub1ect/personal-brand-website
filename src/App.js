@@ -1,11 +1,10 @@
-import Header from "./header.js";
-import Hero from "./hero.js";
-import About from "./about.js";
-import Pricing from "./pricing.js";
-import Breakline from "./breakline.js";
-import Contact from "./contact.js";
-import Footer from "./footer.js";
-
+import Header from "./components/header.js";
+import Hero from "./components/hero.js";
+import About from "./components/about.js";
+import Pricing from "./components/pricing.js";
+import Breakline from "./components/breakline.js";
+import Contact from "./components/contact.js";
+import Footer from "./components/footer.js";
 
 const App = () => {
   return (

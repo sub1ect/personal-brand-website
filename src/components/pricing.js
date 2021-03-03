@@ -1,7 +1,7 @@
 import React from 'react';
-import training from "./images/1.jpg";
-import meal from "./images/food.jpg";
-import online from "./images/online.jpg";
+import training from "../images/1.jpg";
+import meal from "../images/food.jpg";
+import online from "../images/online.jpg";
 
 
 const Pricing = () => {
@@ -20,7 +20,7 @@ const Pricing = () => {
       />
       <Card 
         background={online} 
-        text={"Online consultations"}
+        text={"Online consultation"}
         price={"50$"}
       />
     </section>

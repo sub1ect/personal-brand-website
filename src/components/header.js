@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 // font awesome imports
-import {faDumbbell} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faDumbbell} from "@fortawesome/free-solid-svg-icons";
+
 
 
 const Header = () => {

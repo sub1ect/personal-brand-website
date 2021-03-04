@@ -1,11 +1,18 @@
 .pricing {
-  padding: 4rem 1rem;
+  padding: 6rem 1rem;
 
   &__title {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    padding-bottom: 5rem;
+  }
+
+  &__cards {
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__card {
@@ -23,6 +30,11 @@
     color: white;
     text-transform: uppercase;
     border: 0.5rem solid $color-primary;
+
+    @include desktop {
+      width: 33%;
+      margin: 0.5rem;
+    }
 
     &__title {
       font-size: 2rem;

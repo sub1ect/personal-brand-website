@@ -20,22 +20,18 @@ const Contact = () => {
 
   const nameHandle = e => {
     setName(e.target.value);
-    console.log(name);
   };
 
   const phoneHandle = e => {
     setPhone(e.target.value);
-    console.log(phone);
   };
 
   const emailHandle = e => {
     setEmail(e.target.value);
-    console.log(email);
   };
 
   const messageHandle = e => {
     setMessage(e.target.value);
-    console.log(message);
   };
 
   const validation = {
@@ -53,6 +49,17 @@ const Contact = () => {
     if(validation.name.test(name) 
         && validation.phone.test(phone)
         && validation.email.test(email)) {
+
+      // SEND TO FIRE BASE CODE HERE
+      // SEND TO FIRE BASE CODE HERE
+      // SEND TO FIRE BASE CODE HERE
+      setName("");
+      setNamePH("");
+      setPhone("");
+      setPhonePH("");
+      setEmail("");
+      setEmailPH("");
+      setMessage("");
 
       setConfirm(true);  
       setTimeout(() => {
@@ -75,7 +82,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact container">
+    <section id="contact" className="contact container">
       <h2 className="contact__title">Message me</h2>
       <div className="contact__contact">
         <p className="phone"><FontAwesomeIcon className="icon" icon={faPhoneSquareAlt} size="2x"/>555-555-555</p>

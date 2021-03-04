@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container header__container">
         <Logo />
         <Hamburger hamburgerButton={hamburgerButton} hamburgerOpen={hamburgerOpen}/>
-        <Navigation hamburgerOpen={hamburgerOpen}/>
+        <Navigation hamburgerButton={hamburgerButton} hamburgerOpen={hamburgerOpen}/>
       </div>
     </header>
   );
@@ -40,14 +40,21 @@ const Hamburger = ({hamburgerButton, hamburgerOpen}) => {
   );
 };
 
-const Navigation = ({hamburgerOpen}) => {
+const Navigation = ({hamburgerButton, hamburgerOpen}) => {
+
+  const linkHandle = (e) => {
+    if(!e.target.parentElement.parentElement.parentElement.className.includes("closed")) {
+      hamburgerButton();
+    }
+  }; 
+
   return (
     <nav className={hamburgerOpen ? "header__nav closed" : "header__nav"}>
       <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="pricing">Pricing</a></li>
-        <li><a href="contact">Contact</a></li>
+        <li><a onClick={e => linkHandle(e)} href="#">Home</a></li>
+        <li><a onClick={e => linkHandle(e)} href="#about">About</a></li>
+        <li><a onClick={e => linkHandle(e)} href="#pricing">Pricing</a></li>
+        <li><a onClick={e => linkHandle(e)} href="#contact">Contact</a></li>
       </ul>
     </nav>
   )

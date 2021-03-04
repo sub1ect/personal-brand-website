@@ -6,23 +6,25 @@ import online from "../images/online.jpg";
 
 const Pricing = () => {
   return (
-    <section className="pricing container">
+    <section id="pricing" className="pricing container">
       <h2 className="pricing__title">Pricing</h2>
-      <Card 
-        background={training} 
-        text={"Training plan"}
-        price={"100$"}
-      />
-      <Card 
-        background={meal} 
-        text={"Diet plan"}
-        price={"150$"}
-      />
-      <Card 
-        background={online} 
-        text={"Online consultation"}
-        price={"50$"}
-      />
+      <div className="pricing__cards">
+        <Card 
+          background={training} 
+          text={"Training plan"}
+          price={"100$"}
+        />
+        <Card 
+          background={meal} 
+          text={"Diet plan"}
+          price={"150$"}
+        />
+        <Card 
+          background={online} 
+          text={"Online consultation"}
+          price={"50$"}
+        />
+      </div>
     </section>
   )
 };

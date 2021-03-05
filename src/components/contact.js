@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faPhoneSquareAlt} from "@fortawesome/free-solid-svg-icons";
+import {db} from "../firebase.js";
 
 
 const Contact = () => {
@@ -50,9 +51,6 @@ const Contact = () => {
         && validation.phone.test(phone)
         && validation.email.test(email)) {
 
-      // SEND TO FIRE BASE CODE HERE
-      // SEND TO FIRE BASE CODE HERE
-      // SEND TO FIRE BASE CODE HERE
       setName("");
       setNamePH("");
       setPhone("");
@@ -60,6 +58,13 @@ const Contact = () => {
       setEmail("");
       setEmailPH("");
       setMessage("");
+
+      db.collection("contacts").add({
+        name: name,
+        phone: phone,
+        email: email,
+        message: message
+      })
 
       setConfirm(true);  
       setTimeout(() => {

@@ -96,13 +96,10 @@ const Contact = () => {
       <form>
         <label htmlFor="name">Name</label>
         <input onChange={e => nameHandle(e)} value={name} name="name" type="text" placeholder={namePH}/>
-
         <label htmlFor="phone">Phone</label>
         <input onChange={e => phoneHandle(e)} value={phone} name="phone" type="text" placeholder={phonePH}/>
-
         <label htmlFor="email">Email</label>
         <input onChange={e => emailHandle(e)} value={email} name="email" type="email" placeholder={emailPH}/>
-
         <div>
           <label htmlFor="message">Message</label>
           <textarea maxLength="750" onChange={e => messageHandle(e)} value={message} name="message" />
